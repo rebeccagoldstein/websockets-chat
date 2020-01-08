@@ -5,8 +5,10 @@ const io = require('socket.io').listen(server);
 users = [];
 connections = [];
 
-server.listen(process.env.PORT || 3000);
-console.log('Server running on PORT' + PORT)
+const PORT = process.env.PORT || 3000;
+
+server.listen(PORT);
+console.log('Server running on PORT ' + PORT)
 
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/index.html')
