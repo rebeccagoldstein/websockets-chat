@@ -10,8 +10,10 @@ const PORT = process.env.PORT || 3000;
 server.listen(PORT);
 console.log('Server running on PORT ' + PORT)
 
+app.use(express.static("public"));
+
 app.get('/', function (req, res) {
-    res.sendFile(__dirname + '/index.html')
+    res.sendFile(__dirname + './public/index.html')
 });
 
 io.sockets.on('connection', function (socket) {
