@@ -5,3 +5,9 @@ body {
 #messageArea {
     display: none;
 }
+
+/* #messageForm {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} */

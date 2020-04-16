@@ -3,7 +3,7 @@ $(function () {
     const $messageForm = $('#messageForm');
     const $message = $('#message');
     const $chat = $('#chat');
-    // const $messageArea = ('#messageArea');
+    const $messageArea = $('#messageArea');
     const $userFormArea = $('#userFormArea');
     const $userForm = $('#userForm');
     const $users = $('#users');
@@ -23,8 +23,9 @@ $(function () {
         e.preventDefault();
         socket.emit('new user', $username.val(), function(data){
             if(data){
-                $userFormArea.hide();
-                $('#messageArea').show();
+                $userFormArea.css("display", "none");
+                $messageArea.css("display", "flex")
+
             }
         });
         $username.val('');

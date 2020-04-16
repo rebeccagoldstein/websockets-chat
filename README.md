@@ -4,15 +4,17 @@
 ![GitHub](https://img.shields.io/github/license/rebeccagoldstein/websockets-chat)
 
 ## Description
-A simple chat room created with websockets.
+A simple chat room created with websockets and styled with Bootstrap.
 
 ## Technologies
 * HTML
 * CSS
 * JavaScript
-* Bootstrap
+* jQuery
+* Bootstrap 4
 * Express.js
 * Socket.io
+* Heroku
 
 ## Usage
 Navigate to the chat by clicking [here](https://aqueous-coast-72907.herokuapp.com/).
